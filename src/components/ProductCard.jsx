@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function ProductCard({ product, handleDelete }) {
 
+
   const { name, price, image, _id } = product;
 
   const handleProductDelete = () => {
