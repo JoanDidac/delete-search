@@ -1,11 +1,42 @@
 body {
   padding: 30px;
+  background-image: linear-gradient(99deg, #e7d6f2,#f07bf0 30%, #a307f1);
 }
 
+.product_card  {
+ margin-left: auto;
+ margin-right: auto;
+ border:1px solid #53017b;
+ box-shadow: 0px 0px 10px rgb(99, 2, 255);
+ max-width: min-content;
+
+}
+.product_card h3, p  {
+  font-size: 0.9rem ;
+  padding: 10px ;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+#productImg {
+margin-left: 0.9vw;
+margin-right: 0.9vw;
+width: 200px;
+}
 h1 {
-  color: rgb(80, 103, 149);
+  font-size: 55px;
+  letter-spacing: 0.2rem;
+  color: rgb(67, 18, 147);
   text-align: center;
   margin-bottom: 40px;
+  text-shadow: 0px 0px 2px pink, 1px 1px 1px rgb(196, 196, 196);
+  
+}
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .cart {
@@ -28,8 +59,24 @@ div.product_card img {
 }
 
 .cart button {
-  border: none;
+  border: 1px solid pink;
   height: 30px;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.btn_delete {
+  display: inline-flex;
+  justify-content: center;
+  align-items:center;
+  background-color: rgba(252, 104, 223, 0.23);
+  
 }
 
 @media (max-width: 976px) {

@@ -11,6 +11,13 @@ const App = () => {
   const handleSearch = (value) => { setSearch(value);}
   const filterProducts = products.filter((product)=> product.name.toLowerCase().includes(search.toLowerCase()))
 
+  const handleNewProduct = (newProduct) => {
+   
+    newProduct._id = Math.random().toString(36).substr(2, 9);
+  
+    setProducts((prevProducts) => [...prevProducts, newProduct]);
+  };
+  
 
   // console.log(products);
   // console.log(handleDelete);
@@ -30,6 +37,7 @@ const handleDelete = (deletionId) => {
     <>
       <h1>My shopping cart</h1>
       <Search handleSearch={handleSearch} />
+      {/* <AddProductForm handleNewProduct={handleNewProduct} /> */}
       <div className="cart">
       {filterProducts.map((elem) => {
         return (
